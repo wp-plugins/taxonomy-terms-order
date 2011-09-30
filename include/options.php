@@ -42,7 +42,6 @@ function to_plugin_options()
                                         <div class="p_s_item s_f">
                                             <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.nsp-code.com%2F&amp;send=false&amp;layout=button_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowTransparency="true"></iframe>
                                         </div>
-                                        
                                         <div class="clear"></div>
                                     </div>
                                     

@@ -53,7 +53,6 @@
                     <h4>Did you know there is available a more advanced version of this plug-in? <a target="_blank" href="http://www.nsp-code.com/premium-plugins/wordpress-plugins/advanced-taxonomy-terms-order/">Read more</a></h4>
                     <p>Check our <a target="_blank" href="http://wordpress.org/extend/plugins/post-types-order/">Post Types Order</a> plugin which allow to custom sort all posts, pages, custom post types </p>
                 </div>
-                
                 <div id="ajax-response"></div>
                 
                 <noscript>
