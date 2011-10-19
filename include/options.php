@@ -57,7 +57,7 @@ function to_plugin_options()
                                 
                                 <p>Did you found useful this plug-in? Please support our work with a donation or write an article about this plugin in your blog with a link to our site <br /><strong>http://www.nsp-code.com/</strong>.</p>
                                 <h4>Did you know there is available a more advanced version of this plug-in? <a target="_blank" href="http://www.nsp-code.com/premium-plugins/wordpress-plugins/advanced-taxonomy-terms-order/">Read more</a></h4>
-                                <p>Check our Post Types Order plugin which allow to custom sort all posts, pages, custom post types </p>
+                                <p>Check our <a target="_blank" href="http://wordpress.org/extend/plugins/post-types-order/">Post Types Order</a> plugin which allow to custom sort all posts, pages, custom post types </p>
                             </div>
                            
                             <form id="form_data" name="form" method="post">   

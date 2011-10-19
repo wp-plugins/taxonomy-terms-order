@@ -136,7 +136,7 @@
                     
                     <div id="post-body">                    
                         
-                            <ul class="sortable" id="sortable">
+                            <ul class="sortable" id="tto_sortable">
                                 <?php 
                                     listTerms($taxonomy); 
                                 ?>

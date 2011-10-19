@@ -1,12 +1,12 @@
-=== Category Order - Taxonomy Terms Order  ===
+=== Category Order and Taxonomy Terms Order  ===
 Contributors: Nsp Code
 Donate link: http://www.nsp-code.com/donate.php
 Tags: category order,terms order, taxonomy order, admin order
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 
-Order Categories and all custom taxonomies terms and child terms using a Drag and Drop Sortable javascript capability. <b>No Theme update is required<b/> the code will change the query on the fly.
+Order Categories and all custom taxonomies terms and child terms using a Drag and Drop Sortable javascript capability. No Theme update is required the code will change the query on the fly.
 
 == Description ==
 

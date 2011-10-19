@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Category Order - Taxonomy Terms Order
+Plugin Name: Category Order and Taxonomy Terms Order
 Plugin URI: http://www.nsp-code.com
-Description: Category Order - Taxonomy Terms Order
-Version: 1.2.4
+Description: Category Order and Taxonomy Terms Order
+Version: 1.2.5
 Author: Nsp-Code
 Author URI: http://www.nsp-code.com
 Author Email: electronice_delphi@yahoo.com
@@ -31,6 +31,19 @@ function TO_activated()
                 $query = "ALTER TABLE $wpdb->terms ADD `term_order` INT( 4 ) NULL DEFAULT '0'";
                 $result = $wpdb->query($query); 
             }
+            
+        //make sure the vars are set as default
+        $options = get_option('tto_options');
+        if (!isset($options['autosort']))
+            $options['autosort'] = '1';
+            
+        if (!isset($options['adminsort']))
+            $options['adminsort'] = '1';
+            
+        if (!isset($options['level']))
+            $options['level'] = 0;
+            
+        update_option('tto_options', $options);
     }
     
 function TO_deactivated() 
@@ -70,6 +83,9 @@ function TOPluginMenu()
         add_options_page('Taxonomy Terms Order', '<img class="menu_pto" src="'. TOURL .'/images/menu-icon.gif" alt="" />Taxonomy Terms Order', 'manage_options', 'to-options', 'to_plugin_options');
                 
         $options = get_option('tto_options');
+        
+        if (!isset($options['level']))
+            $options['level'] = 8;
                 
          //put a menu within all custom types if apply
         $post_types = get_post_types();

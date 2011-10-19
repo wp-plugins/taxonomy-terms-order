@@ -2,7 +2,7 @@
 h2.subtitle {font-size: 15px; font-style: italic; font-weight: bold}
 
 #order-terms img {vertical-align: middle}
-#order-terms #sortable { list-style-type: none; margin: 10px 0 0; padding: 0; width: 100%; }
+#order-terms #tto_sortable { list-style-type: none; margin: 20px 0 0; padding: 0; width: 100%; }
 #order-terms ul {list-style: none;}
 #order-terms ul.children {margin-left: 25px} 
 .term_type_li .item {border: 1px solid #DDDDDD;    border-radius: 6px 6px 6px 6px;    cursor: move;    margin: 4px 0;    padding: 2px 0;line-height: 140%;margin-bottom: 6px;}
