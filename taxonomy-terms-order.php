@@ -3,7 +3,7 @@
 Plugin Name: Category Order and Taxonomy Terms Order
 Plugin URI: http://www.nsp-code.com
 Description: Category Order and Taxonomy Terms Order
-Version: 1.2.6
+Version: 1.2.7
 Author: Nsp-Code
 Author URI: http://www.nsp-code.com
 Author Email: electronice_delphi@yahoo.com
@@ -13,7 +13,7 @@ Author Email: electronice_delphi@yahoo.com
 define('TOPATH',    WP_PLUGIN_DIR .'/taxonomy-terms-order');
 define('TOURL',     WP_PLUGIN_URL .'/taxonomy-terms-order');
 
-load_plugin_textdomain('to', "/wp-content/plugins/taxonomy-terms-order/lang/");
+load_plugin_textdomain('to', FALSE, TOPATH. "/lang/");
 
 register_deactivation_hook(__FILE__, 'TO_deactivated');
 register_activation_hook(__FILE__, 'TO_activated');
@@ -42,7 +42,7 @@ function TO_activated()
             $options['adminsort'] = '1';
             
         if (!isset($options['level']))
-            $options['level'] = 0;
+            $options['level'] = 8;
             
         update_option('tto_options', $options);
     }
@@ -141,6 +141,14 @@ function mycategoryorder_applyorderfilter($orderby, $args)
 
 add_filter('get_terms_orderby', 'mycategoryorder_applyorderfilter', 10, 2);
 
+add_filter('get_terms_orderby', 'TO_get_terms_orderby', 1, 2);
+function TO_get_terms_orderby($orderby, $args)
+    {
+        if (isset($args['orderby']) && $args['orderby'] == "term_order" && $orderby != "term_order")
+            return "t.term_order";
+            
+        return $orderby;
+    }
 
 add_action( 'wp_ajax_update-taxonomy-order', 'TOsaveAjaxOrder' );
 function TOsaveAjaxOrder()
@@ -173,6 +181,9 @@ function TOsaveAjaxOrder()
                         $wpdb->update( $wpdb->terms, array('term_order' => ($item_key + 1)), array('term_id' => $term_id) );
                     } 
             }
+            
+            
+        die();
     }
 
 

@@ -24,11 +24,11 @@ h2.subtitle {font-size: 15px; font-style: italic; font-weight: bold}
 .wp-list-taxonomy td, .wp-list-taxonomy th {    border-style: solid;    border-width: 1px 0;}
 .wp-list-taxonomy * {    word-wrap: break-word;}
 
-#cpt_info_box {padding: 0 10px; border: 1px dashed #21759B; background-color: #F1F1F1}
+#cpt_info_box {padding: 0 10px; border: 1px dashed #21759B; background-color: #F1F1F1; margin-top: 10px}
 #cpt_info_box p {font-size: 12px}
 #cpt_info_box #donate_form {float: right; padding: 10px 0 10px 10px}
 #icon-settings {background-image:url("../images/admin-icon-settings.gif");background-repeat:no-repeat;}
-#p_right {float: right; width: 170px; }
+#p_right {float: right; width: 200px; }
 .p_s_item {float: left; padding: 0px 5px; margin-top: 15px; margin-bottom: 5px}
 .p_s_item.s_gp {padding-top: 2px; margin-left: 10px}
 

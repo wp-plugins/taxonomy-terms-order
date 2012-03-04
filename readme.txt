@@ -4,7 +4,7 @@ Donate link: http://www.nsp-code.com/donate.php
 Tags: category order,terms order, taxonomy order, admin order
 Requires at least: 2.8
 Tested up to: 3.3
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 
 Order Categories and all custom taxonomies terms and child terms using a Drag and Drop Sortable javascript capability. No Theme update is required the code will change the query on the fly.
 
@@ -21,7 +21,6 @@ If multiple taxonomies are created for a custom post type, a menu will allow to 
 2. Activate the plugin from Admin > Plugins menu.
 3. Once activated you should check with Settings > Taxonomy Terms Order 
 4. Use Taxonomy Order link which appear into each post type section to make your sort.
-
 
 == Screenshots ==
 
@@ -48,10 +47,9 @@ Absolutelly, the plugin can do that. In fact you can configure so only the admin
 
 All ideas are welcome and i put them on my list to be implemented into the new versions. Anyway this may take time, but if you are in a rush, please consider a small donation and we can arrange something.
 
-
 == Change Log ==
 
-= 1.5.1 = 
+= 1.2.7 = 
  - Localisation Implement, Dutch and Romanian.
  Many thanks to Anja Fokker  http://www.werkgroepen.net/
 
@@ -63,4 +61,4 @@ Make sure you get the latest version
 
 == Localization ==
 
-Currently only available in English
+Currently only available in English, Dutch and Romanian

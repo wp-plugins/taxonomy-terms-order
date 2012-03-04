@@ -40,7 +40,7 @@ function to_plugin_options()
                                         </div> 
                                         
                                         <div class="p_s_item s_f">
-                                            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.nsp-code.com%2F&amp;send=false&amp;layout=button_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowTransparency="true"></iframe>
+                                            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.nsp-code.com%2F&amp;send=false&amp;layout=button_count&amp;width=75&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px;" allowTransparency="true"></iframe>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -103,10 +103,10 @@ function to_plugin_options()
                                             <td>
                                                 <br /><br /><br />
                                 <p><b><u><?php _e( "Autosort OFF", 'to' ) ?></u></b></p>                                                
-                                <p class="example"><?php _e('No query will be changed, the terms will appear in the original order. To retrieve the terms in the required order you must use the menu_order on the orderby parameter', 'to') ?>:</p>
+                                <p class="example"><?php _e('No query will be changed, the terms will appear in the original order. To retrieve the terms in the required order you must use the term_order on the orderby parameter', 'to') ?>:</p>
                                 <pre class="example">
 $argv = array(
-                'orderby'       =>  'menu_order',
+                'orderby'       =>  'term_order',
                 'hide_empty'    => false
                 );
 get_terms('category', $argv);
@@ -114,7 +114,7 @@ get_terms('category', $argv);
                                 <p><?php _e( "See more info on the get_terms usage", 'to' ) ?> <a href="http://codex.wordpress.org/Function_Reference/get_terms" target="_blank"><?php _e( "here", 'to' ) ?></a></p>
 
                                 <p><b><u><?php _e( "Autosort ON", 'to' ) ?></u></b></p> 
-                                <p class="example"><?php _e('The query will be updated, all terms will appear in the order you manually defined. This is recommended if you don\'t want to change any theme code to apply the terms order', 'to') ?></p>
+                                <p class="example"><?php _e('The queries will be updated, all terms will appear in the order you manually defined. This is recommended if you don\'t want to change any theme code to apply the terms order', 'to') ?></p>
                                                    
                                             </td>
                                         </tr>
