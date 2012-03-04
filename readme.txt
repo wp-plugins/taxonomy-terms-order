@@ -53,6 +53,7 @@ All ideas are welcome and i put them on my list to be implemented into the new v
  - Localisation Implement, Dutch and Romanian.
  Many thanks to Anja Fokker  http://www.werkgroepen.net/
 
+ Whant to contribute with a translation to your language? Please use the attached to.pot file
 
 == Upgrade Notice ==
 
