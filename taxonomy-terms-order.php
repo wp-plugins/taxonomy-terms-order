@@ -85,7 +85,7 @@ function TOPluginMenu()
         include (TOPATH . '/include/terms_walker.php');
         
         include (TOPATH . '/include/options.php'); 
-        add_options_page('Taxonomy Terms Order', '<img class="menu_pto" src="'. TOURL .'/images/menu-icon.gif" alt="" />Taxonomy Terms Order', 'manage_options', 'to-options', 'to_plugin_options');
+        add_options_page('Taxonomy Terms Order', '<img class="menu_pto" src="'. TOURL .'/images/menu-icon.gif" alt="" />' . __('Taxonomy Terms Order', 'to'), 'manage_options', 'to-options', 'to_plugin_options');
                 
         $options = get_option('tto_options');
         
@@ -111,9 +111,9 @@ function TOPluginMenu()
                     continue;                
                 
                 if ($post_type == 'post')
-                            add_submenu_page('edit.php', 'Taxonomy Order', 'Taxonomy Order', 'level_'.$options['level'], 'to-interface-'.$post_type, 'TOPluginInterface' );
+                            add_submenu_page('edit.php', __('Taxonomy Order', 'to'), __('Taxonomy Order', 'to'), 'level_'.$options['level'], 'to-interface-'.$post_type, 'TOPluginInterface' );
                             else
-                            add_submenu_page('edit.php?post_type='.$post_type, 'Taxonomy Order', 'Taxonomy Order', 'level_'.$options['level'], 'to-interface-'.$post_type, 'TOPluginInterface' );
+                            add_submenu_page('edit.php?post_type='.$post_type, __('Taxonomy Order', 'to'), __('Taxonomy Order', 'to'), 'level_'.$options['level'], 'to-interface-'.$post_type, 'TOPluginInterface' );
             }
     }
     
