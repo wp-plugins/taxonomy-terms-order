@@ -3,7 +3,7 @@
 Plugin Name: Category Order and Taxonomy Terms Order
 Plugin URI: http://www.nsp-code.com
 Description: Category Order and Taxonomy Terms Order
-Version: 1.3.0
+Version: 1.3.4
 Author: Nsp-Code
 Author URI: http://www.nsp-code.com
 Author Email: electronice_delphi@yahoo.com
@@ -12,8 +12,6 @@ Author Email: electronice_delphi@yahoo.com
 
 define('TOPATH',    plugin_dir_path(__FILE__));
 define('TOURL',     plugins_url('', __FILE__));
-
-load_plugin_textdomain('to', FALSE, TOPATH. "/lang/");
 
 register_deactivation_hook(__FILE__, 'TO_deactivated');
 register_activation_hook(__FILE__, 'TO_activated');
@@ -50,6 +48,12 @@ function TO_activated()
 function TO_deactivated() 
     {
         
+    }
+    
+add_action( 'plugins_loaded', 'to_load_textdomain'); 
+function to_load_textdomain() 
+    {
+        load_plugin_textdomain('to', FALSE, dirname( plugin_basename( __FILE__ ) ) . '/lang');
     }
     
 add_action('admin_print_scripts', 'TO_admin_scripts');
