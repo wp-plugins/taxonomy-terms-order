@@ -3,7 +3,7 @@ Contributors: Nsp Code
 Donate link: http://www.nsp-code.com/donate.php
 Tags: category order,terms order, taxonomy order, admin order
 Requires at least: 2.8
-Tested up to: 3.9.2
+Tested up to: 3.9
 
 Order Categories and all custom taxonomies terms (hierarchically) and child terms using a Drag and Drop Sortable javascript capability. No Theme update is required.
 
